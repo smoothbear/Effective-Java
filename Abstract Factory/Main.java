@@ -23,6 +23,7 @@ package project2;
 
 import java.util.Scanner;
 
+/* 기존 방식
 /** 마우스 인터페이스 **/
 interface Mouse {
 
@@ -56,3 +57,4 @@ public class Main {
         }
     }
 }
+*/
