@@ -1,1 +1,2 @@
-# learning-design-pattern
+# Learn about design pattern!
+
