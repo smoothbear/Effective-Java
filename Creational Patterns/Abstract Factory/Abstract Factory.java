@@ -114,8 +114,8 @@ class PackageFactory {
 // 포장 팩토리에 호출
 class Client {
     public void buying() {
-        Package pack = factory.createPackage("Corsair");
         PackageFactory factory = new PackageFactory();
+        Package pack = factory.createPackage("Corsair");
     }
 }
 **/
