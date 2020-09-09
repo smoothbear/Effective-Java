@@ -222,7 +222,7 @@ class PackageFactory {
     }
 }
 
-/* 포장 팩토리에 호출 */
+/* 포장 팩토리 호출 */
 public class Main {
     public static void main(String[] args) {
         PackageFactory packageFactory = new PackageFactory();
