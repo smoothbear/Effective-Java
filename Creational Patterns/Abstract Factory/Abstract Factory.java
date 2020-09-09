@@ -43,7 +43,7 @@ class CorsairKeyboard implements  Keyboard {
     }
 }
 
- // 키보드 제작 클래
+ // 키보드 제작 클래스
 class KeyboardFactory {
     public Keyboard createKeyboard(String name) {
         Keyboard keyboard = null;
@@ -74,7 +74,7 @@ class CorsairMouse implements Mouse {
     }
 }
 
-// 마우스 제작
+// 마우스 제작 
 class MouseFactory {
     public Mouse createMouse(String name) {
         Mouse mouse = null;
