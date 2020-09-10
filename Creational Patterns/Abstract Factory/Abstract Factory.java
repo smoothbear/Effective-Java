@@ -43,7 +43,7 @@ class CorsairKeyboard implements  Keyboard {
     }
 }
 
- // 키보드 제작 클래
+ // 키보드 제작 클래스
 class KeyboardFactory {
     public Keyboard createKeyboard(String name) {
         Keyboard keyboard = null;
@@ -74,7 +74,7 @@ class CorsairMouse implements Mouse {
     }
 }
 
-// 마우스 제작
+// 마우스 제작 
 class MouseFactory {
     public Mouse createMouse(String name) {
         Mouse mouse = null;
@@ -114,8 +114,8 @@ class PackageFactory {
 // 포장 팩토리에 호출
 class Client {
     public void buying() {
-        Package pack = factory.createPackage("Corsair");
         PackageFactory factory = new PackageFactory();
+        Package pack = factory.createPackage("Corsair");
     }
 }
 **/
@@ -222,7 +222,7 @@ class PackageFactory {
     }
 }
 
-/* 포장 팩토리에 호출 */
+/* 포장 팩토리 호출 */
 public class Main {
     public static void main(String[] args) {
         PackageFactory packageFactory = new PackageFactory();
