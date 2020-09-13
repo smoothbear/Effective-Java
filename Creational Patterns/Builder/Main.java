@@ -2,8 +2,15 @@ package Builder;
 
 /**
  * Effective Java에서 설명하는 Builder 패턴
- * @author kjbin0420 
- * - 객체의
+ * @author kjbin0420
+ *
+ * Builder Pattern의 의도
+ * 복잡한 객체를 생성하는 방법과 표현하는 방법을 정의하는 클래스를 별도로 분리하여
+ * 서로 다른 표현이라도 이를 생성할 수 있는 동일한 구축 공정을 제공할 수 있도록 한다.
+ * -Effective Java 中-
+ *
+ * - 생성자 인자가 많을 때에는 Builder 패턴 적용을 고려하라.
+ * - 생성자에 매개변수가 많다면 빌더를 고려하라.
  */
 
 class Menu {
