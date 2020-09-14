@@ -24,7 +24,7 @@ class Name {
     }
 }
 
-public class Main {
+public class JavaBeans_Pattern {
     public static void main(String[] args) {
         Name name = new Name();
         name.setAge(17);
