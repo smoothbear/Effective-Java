@@ -1,3 +1,9 @@
+/**
+ * Factory Method (팩토리 메서드)
+ *
+ * - 
+ */
+
 // 키보드 인터페이스
 interface Keyboard {}
 
