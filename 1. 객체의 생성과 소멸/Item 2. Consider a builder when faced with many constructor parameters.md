@@ -7,12 +7,12 @@
 ```java
 // Telescoping constructor pattern - 확장성이 좋지 않다!
 public class NutritionFacts {
-  private final int servingSize;	// (mL)							required
-  private final int servings;			// (per container)	required
-  private final int calories;			// (per serving)		optional
-  private final int fat;					// (g/serving)			optional
-  private final int sodium;				// (mg/serving)			optional
-  private final int carbohydrate;	// (g/serving)			optional
+  private final int servingSize;	// (mL)			required
+  private final int servings;		// (per container)	required
+  private final int calories;		// (per serving)	optional
+  private final int fat;		// (g/serving)		optional
+  private final int sodium;		// (mg/serving)		optional
+  private final int carbohydrate;	// (g/serving)		optional
   
   public NutritionFacts(int servingSize, int servings) {
     this(servingSize, servings, 0)
@@ -31,11 +31,11 @@ public class NutritionFacts {
   }
   
   public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium, int carbohydrate) {
-		this.servingSize  = servingSize;
-    this.servings		  = servings;
-    this.calories		  = calories;
-    this.fat				  = fat;
-    this.sodium			  = sodium;
+    this.servingSize  = servingSize;
+    this.servings     = servings;
+    this.calories     = calories;
+    this.fat	      = fat;
+    this.sodium	      = sodium;
     this.carbohydrate = carbohydrate;
   }
 }
@@ -65,21 +65,21 @@ NutritionFacts cocaCola = new NutritionFacts(240, 8, 100, 0, 35, 27);
 // JavaBean Pattern - allows inconsistency, mandates mutability(불일치성을 가지며, 가변성이 강제된다)
 public class NutritionFacts {
   // 매개변수들은 기본값으로 초기화된다.
-  private int servingsSize; 			// Required; no default value
-  private int servings; 					// Required; no default value
-  private int calories 		 = 0;
-  private int fat			 		 = 0;
-  private int sodium	 		 = 0;
+  private int servingsSize; 	// Required; no default value
+  private int servings; 	// Required; no default value
+  private int calories 	   = 0;
+  private int fat          = 0;
+  private int sodium       = 0;
   private int carbohydrate = 0;
   
   public NutritionFacts() { }
   
   // Setters
   public void setServingSize(int val)  { servingSize = val; }
-  public void setServings(int val)		 { servings = val; }
-  public void setCalories(int val)		 { calories = val; }
-  public void setFat(int val)					 { fat = val; }
-  public void setSodium(int val)			 { sodium = val; }
+  public void setServings(int val)     { servings = val; }
+  public void setCalories(int val)     { calories = val; }
+  public void setFat(int val)          { fat = val; }
+  public void setSodium(int val)       { sodium = val; }
   public void setCarbohydrate(int val) { carbohydrate = val; }
 }
 
@@ -140,14 +140,14 @@ public class NutritionFacts {
     private final int servings;
     
     // Optional parameters - initialized to default values
-    private int calories = 		 0;
-    private int fat = 				 0;
-    private int sodium = 			 0;
+    private int calories     = 0;
+    private int fat 	     = 0;
+    private int sodium       = 0;
     private int carbohydrate = 0;
     
     public Builder(int servingSize, int servings) {
       this.servingSize = servingSize;
-      this.servings 	 = servings;
+      this.servings    = servings;
     }
     
     public Builder calories(int val) {
@@ -177,10 +177,10 @@ public class NutritionFacts {
   
   private NutritionFacts(Builder builder) {
     servingsSize = builder.servingsSize;
-    servings 		 = builder.servings;
-    calories 		 = builder.calories;
-    fat 				 = builder.fat;
-    sodium 			 = builder.sodium;
+    servings 	 = builder.servings;
+    calories     = builder.calories;
+    fat 	 = builder.fat;
+    sodium       = builder.sodium;
     carbohydrate = builder.carbohydrate;
   }
 }
