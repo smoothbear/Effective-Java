@@ -59,7 +59,7 @@ NutritionFacts cocaCola = new NutritionFacts(240, 8, 100, 0, 35, 27);
 
 당신이 많은 선택적인 매개변수를 다뤄야 할때의 두번째 대안으로는, *JavaBeans Pattern*(자바빈 패턴)이 있다.
 
-당신이 *매개변수를 받지 않는 생성자(parameterless constructor)*를 호출하여 객체를 생성하고, *setter methods*를 호출하여 필요 매개변수와 선택적 매개변수를 설정한다.
+당신이 매개변수를 받지 않는 생성자(parameterless constructor)를 호출하여 객체를 생성하고, *setter methods*를 호출하여 필요 매개변수와 선택적 매개변수를 설정한다.
 
 ```java
 // JavaBean Pattern - allows inconsistency, mandates mutability(불일치성을 가지며, 가변성이 강제된다)
