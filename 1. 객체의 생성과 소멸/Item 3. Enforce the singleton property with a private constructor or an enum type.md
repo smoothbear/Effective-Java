@@ -1,4 +1,4 @@
-### Item 3: private constructor나 enum type으로 singleton property를 강제해라.
+### Item 3: private constructor나 enum type으로 singleton property를 사용해라.
 
 *Singleton*은 간단하게 클래스의 *Instantiated*(인스턴스화)가 정확히 한번만 진행된다.
 
